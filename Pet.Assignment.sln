@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet.Assignment.Abstractions", "src\Pet.Assignment.Abstractions\Pet.Assignment.Abstractions.csproj", "{CFF73F63-E48A-466E-8D9A-ED5507F3CB01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet.Assignment.Business", "src\Pet.Assignment.Business\Pet.Assignment.Business.csproj", "{219FFDA2-C9DE-4354-9FF6-BB3943EBD78F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet.Assignment.DataAccess", "src\Pet.Assignment.DataAccess\Pet.Assignment.DataAccess.csproj", "{FFD6C1DD-FD17-495D-BCD7-7FFC64F7F1FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet.Assignment.Domain", "src\Pet.Assignment.Domain\Pet.Assignment.Domain.csproj", "{8F2AB949-A0F1-4841-B220-7D64BFC9F140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet.Assignment.IoC", "src\Pet.Assignment.IoC\Pet.Assignment.IoC.csproj", "{A0807F47-C1F3-4B30-8E13-A5C99E5969B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet.Assignment.WebServices", "src\Pet.Assignment.WebServices\Pet.Assignment.WebServices.csproj", "{340D3B86-1881-46DD-8964-D420E833D9CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFF73F63-E48A-466E-8D9A-ED5507F3CB01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF73F63-E48A-466E-8D9A-ED5507F3CB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF73F63-E48A-466E-8D9A-ED5507F3CB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF73F63-E48A-466E-8D9A-ED5507F3CB01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{219FFDA2-C9DE-4354-9FF6-BB3943EBD78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219FFDA2-C9DE-4354-9FF6-BB3943EBD78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219FFDA2-C9DE-4354-9FF6-BB3943EBD78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219FFDA2-C9DE-4354-9FF6-BB3943EBD78F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD6C1DD-FD17-495D-BCD7-7FFC64F7F1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD6C1DD-FD17-495D-BCD7-7FFC64F7F1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD6C1DD-FD17-495D-BCD7-7FFC64F7F1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD6C1DD-FD17-495D-BCD7-7FFC64F7F1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2AB949-A0F1-4841-B220-7D64BFC9F140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2AB949-A0F1-4841-B220-7D64BFC9F140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2AB949-A0F1-4841-B220-7D64BFC9F140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2AB949-A0F1-4841-B220-7D64BFC9F140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0807F47-C1F3-4B30-8E13-A5C99E5969B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0807F47-C1F3-4B30-8E13-A5C99E5969B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0807F47-C1F3-4B30-8E13-A5C99E5969B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0807F47-C1F3-4B30-8E13-A5C99E5969B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340D3B86-1881-46DD-8964-D420E833D9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340D3B86-1881-46DD-8964-D420E833D9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340D3B86-1881-46DD-8964-D420E833D9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340D3B86-1881-46DD-8964-D420E833D9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
