@@ -23,16 +23,17 @@ namespace Pet.Assignment.WebServices.Controllers
         }
 
         [HttpGet]
+        [Route("api/pets/owners/{petOwnerId}")]
         public async Task<IHttpActionResult> GetByOwner(int petOwnerId)
         {
-            var petOwner = await _petOwnerQuery.GetAsync(x => x.Id == petOwnerId);
+            var petOwner = await _petOwnerQuery.GetAsync(petOwnerId);
             if (petOwner == null)
             {
                 return NotFound();
             }
 
             var pets = await _petQuery.GetAsync(x => x.PetOwners.FirstOrDefault(po => po.Id == petOwnerId).Id == petOwnerId);
-            if (pets == null)
+            if (pets == null || !pets.Any())
             {
                 return NotFound();
             }
@@ -73,11 +74,11 @@ namespace Pet.Assignment.WebServices.Controllers
             }
         }
 
-        public async Task<IHttpActionResult> Put(int id, [FromBody]Domain.Pet pet)
+        public async Task<IHttpActionResult> Put([FromBody]Domain.Pet pet)
         {
             try
             {
-                var petFound = await _petQuery.GetAsync(id);
+                var petFound = await _petQuery.GetAsync(pet.Id);
                 if (petFound == null)
                 {
                     return NotFound();
@@ -98,10 +99,11 @@ namespace Pet.Assignment.WebServices.Controllers
         }
 
         [HttpGet]
+        [Route("api/pets/youngerthan/{petAge}")]
         public async Task<IHttpActionResult> GetWithAgeBelow(int petAge)
         {
             var pets = await _petQuery.GetAsync(x => DateTime.Now.Year - x.DateOfBirth.Year < petAge);
-            if (pets == null)
+            if (pets == null || !pets.Any())
             {
                 return NotFound();
             }
